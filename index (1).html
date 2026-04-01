@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Ganti bagian footer di index.html dengan ini -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 CyberShield. Learn to Stay Safe Online.</p>
+        <div class="creator-info">
+            <p><strong>Dibuat oleh:</strong></p>
+            <p><i class="fas fa-user"></i> Seli Rahmawati</p>
+            <p><i class="fas fa-graduation-cap"></i> Kelas 11 TKJ 2</p>
+        </div>
+    </div>
+</footer>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Cybersecurity Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Particles -->
+    <div class="particles">
+        <div class="particle" id="p1"></div>
+        <div class="particle" id="p2"></div>
+        <div class="particle" id="p3"></div>
+        <div class="particle" id="p4"></div>
+        <div class="particle" id="p5"></div>
+        <div class="particle" id="p6"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>CyberShield</span>
+            </div>
+            <div class="nav-menu">
+                <span class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="CyberSecurity">CyberSecurity</span>
+                    <span class="subtext">Protect Your Digital World</span>
+                </h1>
+                <p class="hero-desc">Pelajari dasar-dasar keamanan siber untuk melindungi diri Anda di dunia digital</p>
+                <button class="cta-btn" onclick="scrollToTopics()">
+                    <i class="fas fa-rocket"></i> Mulai Belajar
+                </button>
+            </div>
+            <div class="hero-animation">
+                <div class="matrix-code"></div>
+                <div class="floating-lock">
+                    <i class="fas fa-lock"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="topics" id="topics">
+            <h2 class="section-title">Materi Pembelajaran</h2>
+            <div class="topics-grid">
+                <div class="topic-card" data-topic="1">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Malware & Virus</h3>
+                    <p>Pengertian dan cara mencegah serangan malware</p>
+                </div>
+                <div class="topic-card" data-topic="2">
+                    <div class="card-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Password Security</h3>
+                    <p>Teknik membuat password yang aman dan kuat</p>
+                </div>
+                <div class="topic-card" data-topic="3">
+                    <div class="card-icon">
+                        <i class="fas fa-fishing"></i>
+                    </div>
+                    <h3>Phishing Attack</h3>
+                    <p>Mengenali dan menghindari serangan phishing</p>
+                </div>
+                <div class="topic-card" data-topic="4">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Security</h3>
+                    <p>Keamanan jaringan dan WiFi publik</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Modal -->
+        <div class="content-modal" id="contentModal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CyberShield. Learn to Stay Safe Online.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
